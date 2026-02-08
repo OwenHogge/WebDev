@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Your+Headline+Font&family=Your+Body+Font&display=swap');
+
 /* layout stuff */
 body {
     background-color: #fcfbfb;
+    font-family: 'Your Body Font', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 #content {
@@ -10,6 +20,10 @@ body {
 
 main section {
     text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;  /* ← ADD THIS NEW RULE-SET */
 }
 
 #background {
@@ -26,9 +40,14 @@ header {
     background-color: #F1C850;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 nav a {
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -49,6 +68,9 @@ nav a:hover {
 .home-title {
     background-color: #1196ca;
     color: #F1C850;
+    font-family: 'Your Headline Font', Georgia, serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 
@@ -56,11 +78,19 @@ nav a:hover {
 .book {
     background-color: #fcfbfb;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;  /* ← ADD THIS */
 }
 
 .join {
     background-color: #fcfbfb;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;  /* ← ADD THIS */
 }
 
 .book:hover {
@@ -75,16 +105,39 @@ nav a:hover {
 /* message box area */
 .msg {
     background-color: #F1C850;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     background-color: #1196ca;
     color: #F1C850;
+    font-family: 'Your Headline Font', Georgia, serif;
 }
 
 .msg p {
     background-color: #1196ca;
     color: #F1C850;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+
+/* card sections */
+.rivers-card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+}
+
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #1196ca;  /* ← ADD THIS NEW RULE-SET (using your blue color) */
 }
 
 
@@ -98,6 +151,8 @@ h4 {
 /* footer */
 footer {
     background-color: #1196ca;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -117,10 +172,15 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 
 /* images and icons */
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
