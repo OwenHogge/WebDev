@@ -48,6 +48,8 @@ header {
     background-color: #F1C850;
     display: grid;
     grid-template-columns: 150px auto;
+    position: relative;
+    z-index: 10;
 }
 
 #logo_link {
