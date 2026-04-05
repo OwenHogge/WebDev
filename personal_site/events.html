@@ -44,41 +44,12 @@ nav a:nth-child(2).active{background:rgba(244,195,0,.15);color:var(--yellow)}
 nav a:nth-child(3).active{background:rgba(0,159,61,.2);color:var(--green)}
 nav a.active::after{transform:scaleX(1)}
 
-.hero{position:relative;width:100%;max-height:520px;overflow:hidden}
-.hero img{width:100%;height:520px;object-fit:cover;object-position:center 40%;display:block}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.6));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem}
-.hero-overlay h2{font-family:var(--heading-font);font-size:clamp(2rem,5vw,3.4rem);font-weight:700;color:var(--yellow);background:rgba(0,0,0,.4);padding:.3em .8em;border-radius:var(--radius);margin-bottom:.6rem;letter-spacing:.06em}
-.hero-overlay p{font-family:var(--heading-font);font-size:clamp(1rem,2.5vw,1.35rem);color:#fff;background:var(--blue);padding:.35em 1.2em;border-radius:var(--radius);margin-bottom:1.4rem;font-weight:400}
-.btn{display:inline-block;font-family:var(--heading-font);font-weight:600;font-size:1rem;letter-spacing:.07em;padding:.7em 2.2em;border-radius:var(--radius);cursor:pointer;transition:background var(--transition),color var(--transition),transform var(--transition);border:2px solid transparent}
-.btn-white{background:#fff;color:var(--blue);border-color:#fff}
-.btn-white:hover{background:var(--yellow);color:var(--black);border-color:var(--yellow);transform:translateY(-2px)}
-.btn-dark{background:var(--black);color:#fff;border-color:#444}
-.btn-dark:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-2px)}
-
 main{max-width:1100px;margin:0 auto;padding:0 1.5rem 3rem}
-.welcome-section{text-align:center;max-width:780px;margin:0 auto 2.5rem}
-.welcome-section p{font-size:1.05rem;color:#333;line-height:1.8}
-.image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:2rem 0 2.5rem}
-.image-grid-item{display:flex;flex-direction:column;align-items:center;gap:.8rem}
-.image-grid-item:nth-child(1) img{border:4px solid var(--blue)}
-.image-grid-item:nth-child(2) img{border:4px solid var(--yellow)}
-.image-grid-item:nth-child(3) img{border:4px solid var(--green)}
-.image-grid-item img{width:100%;height:190px;object-fit:cover;border-radius:var(--radius);transition:opacity var(--transition),transform var(--transition)}
-.image-grid-item img:hover{opacity:.88;transform:translateY(-3px)}
-.image-grid-item .icon{font-size:2.4rem}
-.image-grid-item span{font-family:var(--heading-font);font-size:1.15rem;font-weight:600;color:var(--black);letter-spacing:.04em}
-
-.split-section{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin:2.5rem 0}
-.split-section img{width:100%;height:100%;min-height:300px;object-fit:cover}
-.split-content{background:var(--black);padding:2.5rem 2rem;display:flex;flex-direction:column;justify-content:center;gap:1rem;border-top:5px solid var(--yellow)}
-.split-content h2{font-family:var(--heading-font);font-size:clamp(1.4rem,3vw,2rem);font-weight:700;color:var(--yellow);text-align:center;line-height:1.3}
-.split-content p{font-size:.98rem;color:#ccc;text-align:center;line-height:1.7}
-.split-content .btn{align-self:center}
 
 h1{font-family:var(--heading-font);font-size:clamp(1.8rem,4vw,2.6rem);color:var(--black);text-align:center;padding:2.5rem 0 1.5rem;letter-spacing:.04em}
 h1::after{content:'';display:block;height:5px;background:var(--rings);border-radius:2px;margin-top:.5rem;max-width:260px;margin-left:auto;margin-right:auto}
 
-.two-column{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:1rem}
+.two-column{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2.5rem}
 .column{background:var(--light-bg);border-radius:8px;padding:1.8rem;box-shadow:0 2px 12px rgba(0,0,0,.07);border-top:4px solid var(--black)}
 .column:nth-child(1){border-top-color:var(--blue)}
 .column:nth-child(2){border-top-color:var(--red)}
@@ -86,11 +57,6 @@ h1::after{content:'';display:block;height:5px;background:var(--rings);border-rad
 .column h3{font-family:var(--heading-font);font-size:1.1rem;color:var(--black);margin:1.4rem 0 .5rem;letter-spacing:.03em;border-left:4px solid var(--yellow);padding-left:.6rem}
 .column p{font-size:.95rem;color:#333;margin-bottom:.5rem}
 .column img{width:100%;height:200px;object-fit:cover;border-radius:var(--radius);margin-bottom:1rem;border:3px solid var(--black)}
-
-.single-column{max-width:820px;margin:0 auto}
-.single-column h2{font-family:var(--heading-font);font-size:1.5rem;font-weight:700;color:#fff;background:var(--black);display:inline-block;padding:.3em .8em;border-radius:var(--radius);margin:2rem 0 .6rem;letter-spacing:.03em}
-.single-column p{font-size:.98rem;color:#333;line-height:1.8;margin-bottom:1rem}
-.single-column img{width:100%;max-height:320px;object-fit:cover;border-radius:6px;margin:.8rem 0 1.2rem;border:4px solid var(--black);box-shadow:var(--shadow)}
 
 footer{background:var(--black);color:#fff;padding:0 0 2rem;margin-top:3rem}
 footer::before{content:'';display:block;height:5px;background:var(--rings);margin-bottom:1.8rem}
@@ -105,9 +71,157 @@ footer::before{content:'';display:block;height:5px;background:var(--rings);margi
 .social-icon:nth-child(2):hover{background:var(--red);border-color:var(--red)}
 .social-icon:nth-child(3):hover{background:var(--green);border-color:var(--green)}
 
-@media(max-width:768px){.header-content{flex-direction:column;gap:.4rem}nav{flex-wrap:wrap;justify-content:center}.two-column{grid-template-columns:1fr}.split-section{grid-template-columns:1fr}.image-grid{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}}</style>
+
+/* ============================================================
+   W3SCHOOLS TABS COMPONENT — CSS
+   Source: https://www.w3schools.com/howto/howto_js_tabs.asp
+   Copied exactly as provided. Class names unchanged.
+============================================================ */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Fade in tab content (optional enhancement from W3Schools) */
+.tabcontent {
+  animation: fadeEffect 0.5s;
+}
+@keyframes fadeEffect {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+/* ============================================================
+   MY OWN CUSTOMIZATIONS — added on top of W3Schools base
+   Overriding colors and fonts to match the Olympics site theme.
+   Class names (.tab, .tablinks, .tabcontent) kept identical.
+============================================================ */
+
+.tab-section {
+  margin: 0 0 2.5rem;
+}
+
+.tab-section h2 {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: .8rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+/* Override: give the tab bar the Olympic rings stripe */
+.tab {
+  background-color: var(--black);
+  border: none;
+  border-bottom: 4px solid var(--yellow);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* Override: style each tab button */
+.tab button {
+  font-family: var(--heading-font);
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #ccc;
+  padding: 14px 22px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Override: hover state */
+.tab button:hover {
+  background-color: rgba(255,255,255,.1);
+  color: #fff;
+}
+
+/* Override: active tab */
+.tab button.active {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+/* Override: tab content panel */
+.tabcontent {
+  border: 2px solid var(--yellow);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 24px 28px;
+  background: var(--light-bg);
+}
+
+.tabcontent h3 {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: .6rem;
+  border-left: 4px solid var(--blue);
+  padding-left: .6rem;
+}
+
+.tabcontent p {
+  font-size: .96rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: .8rem;
+}
+
+.tabcontent img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 3px solid var(--black);
+  margin: .6rem 0 1rem;
+}
+
+@media(max-width:768px){
+  .header-content{flex-direction:column;gap:.4rem}
+  nav{flex-wrap:wrap;justify-content:center}
+  .tab button{padding:10px 14px;font-size:.82rem}
+  .two-column{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+  </style>
 </head>
 <body>
+
   <header>
     <div class="header-content">
       <img src="ps_images/winter_olympics.jpg" alt="Winter Olympics Logo" class="logo">
@@ -121,16 +235,90 @@ footer::before{content:'';display:block;height:5px;background:var(--rings);margi
 
   <main>
     <h1>Events &amp; Athletes</h1>
+
+
+    <!--
+      ============================================================
+      W3SCHOOLS TABS COMPONENT — HTML
+      Source: https://www.w3schools.com/howto/howto_js_tabs.asp
+
+      Original W3Schools HTML structure (copied, class names unchanged):
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+      Content replaced with my own (Winter Olympic sports categories).
+      Function name changed from openCity → openSport to match my content.
+      ============================================================
+    -->
+    <div class="tab-section">
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openSport(event, 'Alpine')" id="defaultOpen">Alpine Skiing</button>
+        <button class="tablinks" onclick="openSport(event, 'Skating')">Skating</button>
+        <button class="tablinks" onclick="openSport(event, 'Bobsled')">Bobsled &amp; Luge</button>
+        <button class="tablinks" onclick="openSport(event, 'IceHockey')">Ice Hockey</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="Alpine" class="tabcontent">
+        <img src="ps_images/skiing.jpg" alt="Alpine skiing event at the Winter Olympics">
+        <h3>Alpine Skiing</h3>
+        <p>Alpine skiing is the backbone of the Winter Olympics and the discipline that draws the biggest television audiences outside of figure skating. Events include the downhill, super-G, giant slalom, slalom, and combined. Athletes race down steep mountain courses at speeds exceeding 80 miles per hour in the downhill, leaning into icy turns with razor-thin margins for error.</p>
+        <p>Legends of the sport include Austrian Toni Sailer, American Bode Miller, and Swiss icon Didier Cuche. In recent years, Mikaela Shiffrin of the United States has rewritten the record books, becoming the most decorated Alpine ski racer in World Cup history. Skiing events make up the largest share of Winter Olympic medals, and no Games would feel complete without the roar of the downhill crowd.</p>
+      </div>
+
+      <div id="Skating" class="tabcontent">
+        <h3>Figure &amp; Speed Skating</h3>
+        <p>Skating events draw some of the largest television audiences at the Winter Olympics. Figure skating — including singles, pairs, ice dance, and the team event — blends athleticism with artistic expression and is often among the most talked-about competitions of the Games. Judges score based on technical elements and program components such as transitions, performance, and interpretation.</p>
+        <p>Speed skating takes place on a 400-meter oval where athletes race in pairs against the clock, while short track speed skating is contested on a smaller 111-meter surface in tightly packed group heats. American Apolo Anton Ohno became a household name through his dramatic short track runs, while Dutch speed skater Sven Kramer dominated long track racing for over a decade.</p>
+      </div>
+
+      <div id="Bobsled" class="tabcontent">
+        <img src="ps_images/bob.jpg" alt="Bobsled competitors racing at the Winter Olympics">
+        <h3>Bobsled &amp; Luge</h3>
+        <p>Bobsled teams of two or four athletes pilot a sleek sled down a twisting ice track, reaching speeds above 90 mph. Races are decided by hundredths of a second. The driver steers with two rings connected to the front runners, while brakeman strategy and the explosive push-off at the start can make or break a run.</p>
+        <p>Luge athletes lie on their backs and steer with subtle leg pressure and shoulder shifts, hurtling feet-first through banked turns. Skeleton is the daring cousin of luge — athletes race head-first, face-down, relying on pure courage and body positioning. All three sliding events share the same iced track and deliver some of the most heart-pounding moments of the Winter Games.</p>
+      </div>
+
+      <div id="IceHockey" class="tabcontent">
+        <h3>Ice Hockey</h3>
+        <p>Olympic ice hockey has produced some of the most memorable moments in sports history. The 1980 "Miracle on Ice," when the United States amateur squad defeated the heavily favored Soviet Union at Lake Placid, remains one of the greatest upsets ever recorded. Women's hockey was added to the program at the 1998 Nagano Games, and Canada and the United States have dominated the women's competition ever since.</p>
+        <p>The men's tournament features the world's best national teams competing in a round-robin format leading to knockout rounds. When NHL players have been allowed to participate, the Games have attracted global superstars. The combination of national pride, physical play, and high-skill hockey makes Olympic ice hockey must-watch television for fans around the world.</p>
+      </div>
+
+    </div>
+    <!-- END W3Schools Tabs Component -->
+
+
+    <!-- Original two-column section kept below the new component -->
     <div class="two-column">
 
       <div class="column">
-        <h2>Winter Olympic Sports</h2>
+        <h2>All Winter Olympic Sports</h2>
         <img src="ps_images/skiing.jpg" alt="Skiing event at the Winter Olympics">
-        <p>The Winter Olympics currently features over 100 events spread across 15 disciplines, grouped into seven broad sport categories: biathlon, bobsled, curling, ice hockey, luge, skating, and skiing. Each discipline demands a unique combination of physical and mental skills. Speed skaters train for explosive power and aerodynamic efficiency, while figure skaters spend thousands of hours perfecting technique and artistry. Freestyle skiers must master both courage and precision, launching off massive jumps while executing complex aerial maneuvers.</p>
-        <h3>Skiing Events</h3>
-        <p>Skiing is the backbone of the Winter Olympics and encompasses Alpine skiing, cross-country skiing, ski jumping, Nordic combined, and freestyle skiing. Alpine events such as the downhill, super-G, giant slalom, and slalom test speed and technical skill on groomed mountain courses. Cross-country events reward endurance athletes who glide for distances up to 50 kilometers. Ski jumping athletes soar hundreds of meters through the air, scored on both distance and style. Together, skiing events make up the largest share of Winter Olympic medals.</p>
-        <h3>Skating Events</h3>
-        <p>Skating events draw some of the largest television audiences at the Winter Olympics. Figure skating — including singles, pairs, ice dance, and the team event — blends athleticism with artistic expression and is often among the most talked-about competitions of the Games. Speed skating takes place on a 400-meter oval where athletes race in pairs against the clock, while short track speed skating is contested on a smaller 111-meter ice surface in tightly packed group heats that frequently produce dramatic finishes.</p>
+        <p>The Winter Olympics currently features over 100 events spread across 15 disciplines, grouped into seven broad sport categories: biathlon, bobsled, curling, ice hockey, luge, skating, and skiing. Each discipline demands a unique combination of physical and mental skills.</p>
+        <h3>Cross-Country &amp; Biathlon</h3>
+        <p>Cross-country events reward endurance athletes who glide for distances up to 50 kilometers. Biathlon uniquely combines cross-country skiing with rifle marksmanship — athletes must slow their racing heart rate enough to hit small targets after sprinting. It is one of the most physically and mentally demanding sports at the Games.</p>
+        <h3>Curling</h3>
+        <p>Curling, sometimes called "chess on ice," requires teams of four to slide polished granite stones toward a target. Sweeping the ice in front of a stone affects its speed and curl. Strategy, teamwork, and precision are the hallmarks of a great curling squad. The sport has grown enormously in popularity since its return to the Olympics in 1998.</p>
       </div>
 
       <div class="column">
@@ -138,9 +326,9 @@ footer::before{content:'';display:block;height:5px;background:var(--rings);margi
         <img src="ps_images/bob.jpg" alt="Bobsled competitors at the Winter Olympics">
         <p>The Winter Olympics have produced legendary competitors across every generation. Norwegian biathlete Ole Einar Bjørndalen won a record 13 Olympic medals over the course of his career. American snowboarder Shaun White became a household name with back-to-back-to-back halfpipe gold medals. Norwegian cross-country skier Marit Bjørgen retired as the most decorated Winter Olympian of all time with 15 medals.</p>
         <h3>The New Generation</h3>
-        <p>Today, a new generation of athletes is pushing the limits even further, with young competitors from countries like China, South Korea, and the United States redefining what is possible in sports like freestyle skiing and short track. These athletes bring innovation, creativity, and incredible dedication to their disciplines, inspiring millions of fans around the world.</p>
+        <p>Today, a new generation of athletes is pushing the limits even further, with young competitors from countries like China, South Korea, and the United States redefining what is possible in sports like freestyle skiing and short track. These athletes bring innovation, creativity, and incredible dedication to their disciplines, inspiring millions of fans worldwide.</p>
         <h3>Training and Dedication</h3>
-        <p>The path to Olympic success requires years of intense training, often beginning in childhood. Athletes must balance physical conditioning with technical skill development, mental preparation, and tactical awareness. Many train year-round at specialized facilities, working with coaches, nutritionists, and sports psychologists to optimize their performance. The dedication required to compete at the Olympic level is extraordinary, with athletes often making significant personal sacrifices in pursuit of their dreams.</p>
+        <p>The path to Olympic success requires years of intense training, often beginning in childhood. Athletes must balance physical conditioning with technical skill development, mental preparation, and tactical awareness. Many train year-round at specialized facilities, working with coaches, nutritionists, and sports psychologists to optimize their performance.</p>
       </div>
 
     </div>
@@ -164,5 +352,44 @@ footer::before{content:'';display:block;height:5px;background:var(--rings);margi
       </div>
     </div>
   </footer>
+
+
+  <!--
+    ============================================================
+    W3SCHOOLS TABS COMPONENT — JAVASCRIPT
+    Source: https://www.w3schools.com/howto/howto_js_tabs.asp
+
+    Original W3Schools function (copied exactly, only the
+    function name was changed from openCity → openSport
+    and the parameter from cityName → sportName to match
+    my content. Logic is identical.):
+    ============================================================
+  -->
+  <script>
+  function openSport(evt, sportName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(sportName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Show the first tab by default (W3Schools pattern)
+  document.getElementById("defaultOpen").click();
+  </script>
+
 </body>
 </html>
